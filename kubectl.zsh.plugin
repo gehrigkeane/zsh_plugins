@@ -1,0 +1,24 @@
+# Aliases for kubectl, the command line interface for Kubernetes
+#
+# ref: https://github.com/mattbangert
+
+# Utility
+alias k=kubectl
+
+# Describe commands
+alias kd='kubectl describe'
+
+# Get commands
+alias kg='kubectl get'
+alias kgp='kubectl get pods'
+alias kgns='kubectl get namespaces'
+alias kgall='kubectl get ingress,service,deployment,pod'
+
+#Configuration commands
+alias kcu='kubectl config use-context'
+alias kcs='kubectl config set-context "$(kubectl config current-context)"'
+alias kcsn='kcs --namespace'
+
+# Networking
+alias kpf='kubectl port-forward '
+alias kp='kubectl proxy'
